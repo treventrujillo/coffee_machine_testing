@@ -11,5 +11,5 @@ class User < ApplicationRecord
     less_than_or_equal_to: 150
   }
   
-  has_many :cofffees, dependent: :destroy
+  has_many :coffees, dependent: :destroy
 end

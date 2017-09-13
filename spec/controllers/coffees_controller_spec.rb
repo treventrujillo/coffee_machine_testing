@@ -18,6 +18,8 @@ RSpec.describe CoffeesController, type: :controller do
     let(:invalid_attributes) {
      { amount: "", brew: "", ice: 124152, caffeine: false }
     }
+
+    let(:coffee) { @user.coffees.create! valid_attributes }
   
   describe "GET #index" do
     it "returns a success response" do
